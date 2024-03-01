@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather India</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column bg-secondary">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Weather India</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <!-- Content Area -->
+    <div class="container-fluid flex-grow-1 d-flex justify-content-center align-items-center min-vh-100">
+        <div class="card w-5 bg-dark text-light p-4 shadow-lg rounded-30">
+            <div class="card-body bg-dark text-light">
+                <h2 class="text-center mb-4">Choose your location</h2>
+                <div class="input-group mb-3">
+                    <input type="text" id="cityInput" class="form-control" placeholder="Enter city name">
+                    <button id="searchBtn" class="btn btn-primary" type="button">Search</button>
+                </div>
+                <div id="weatherInfo"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="bg-dark flex-grow-1 d-flex justify-content-center align-items-center text-light min-vh-100">
+        <div class="container py-5">
+            <h1 class="text-center mb-4">About Weather India</h1>
+            <p>Welcome to Weather India, your go-to destination for up-to-date weather information from around the world. Our mission is to provide users with accurate and reliable weather forecasts to help them plan their activities, whether it's a weekend getaway, outdoor adventure, or daily commute.</p>
+            <h2>Features</h2>
+            <ul>
+                <li>Real-Time Weather Updates: Get real-time updates on current weather conditions, including temperature, humidity, wind speed, and more.</li>
+                <li>User-Friendly Interface: Our user-friendly interface makes it easy for users of all ages to access and understand weather information quickly and intuitively.</li>
+                <li>Global Coverage: Whether you're planning a trip across the country or abroad, Weather India provides global coverage, so you can stay informed about weather conditions anywhere in the world.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-secondary flex-grow-1 d-flex justify-content-center align-items-center min-vh-100">
+        <div class="container py-5 w-75 bg-dark text-light">
+            <h1 class="text-center mb-4">Contact Us</h1>
+            <form action="https://formsubmit.co/1e432f980c6062411f418d4cf75ca142" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Weather India</p>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
